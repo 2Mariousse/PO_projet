@@ -58,11 +58,17 @@
             (not (top_deck_card ?c1))
             (top_deck_card ?c2)
             (card_in_hand ?c1)
-            (increase (n_card_in_hand) 1) 
-            ; (when (= (n_card_in_hand) 7)
-            (not (is_drawing))
-            ; )
+            (increase (n_card_in_hand) 1)
         )
+    )
+    
+    (:action stop_drawing
+        :parameters ()
+        :precondition (and 
+            (= (n_card_in_hand) 7)
+            (is_drawing)
+        )
+        :effect (not (is_drawing))
     )
 
     (:action draw_final_card
