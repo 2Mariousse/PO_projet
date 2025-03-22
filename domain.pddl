@@ -49,6 +49,7 @@
         :precondition (and
             (top_deck_card ?c1)
             (next_card_in_deck ?c1 ?c2)
+            (<= (n_card_in_hand) 6)
             (or 
                 (is_drawing)
                 (<= (n_card_in_hand) 5)
@@ -59,6 +60,7 @@
             (top_deck_card ?c2)
             (card_in_hand ?c1)
             (increase (n_card_in_hand) 1)
+            (is_drawing)
         )
     )
     

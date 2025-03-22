@@ -33,16 +33,16 @@
         (is_bottom_card c55)
 
 
-        ; (card_in_hand c19)
-        ; (card_in_hand c27)
-        ; (card_in_hand c17)
-        ; (card_in_hand c52)
-        ; (card_in_hand c28)
-        ; (card_in_hand c89)
-        ; (card_in_hand c74)
+        (card_in_hand c19)
+        (card_in_hand c27)
+        (card_in_hand c17)
+        (card_in_hand c52)
+        (card_in_hand c28)
+        (card_in_hand c89)
+        (card_in_hand c74)
         
-        ; (= (n_card_in_hand) 7)
-        (= (n_card_in_hand) 0)
+        (= (n_card_in_hand) 7)
+        ; (= (n_card_in_hand) 0)
 
         (= (value c1) 1)
         (= (value c3) 3)
