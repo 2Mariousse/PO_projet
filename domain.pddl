@@ -31,8 +31,8 @@
             (or 
                 (and (ascending_pile ?p) (> (value ?c) (value ?c_top)))
                 (and (descending_pile ?p) (< (value ?c) (value ?c_top)))
-                (and (ascending_pile ?p) (= (value ?c) (- (value ?c_top) 10)))
-                (and (descending_pile ?p) (= (value ?c) (+ (value ?c_top) 10)))
+                (and (ascending_pile ?p) (= (value ?c) (- (value ?c_top) 5)))
+                (and (descending_pile ?p) (= (value ?c) (+ (value ?c_top) 5)))
             )
         )
         :effect (and

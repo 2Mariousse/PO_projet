@@ -1,0 +1,12 @@
+;;!domain: the_game
+;;!problem: easy
+
+0: (draw_card c1 c2)
+1: (draw_card c1 c2)
+2: (draw_final_card c1)
+3: (play_card c p c_top)
+4: (play_card c p c_top)
+5: (play_card c p c_top)
+
+; Makespan: 5
+; Metric: 5
