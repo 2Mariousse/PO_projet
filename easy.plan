@@ -1,12 +1,12 @@
 ;;!domain: the_game
 ;;!problem: easy
 
-0: (draw_card c1 c2)
-1: (draw_card c1 c2)
-2: (draw_final_card c1)
-3: (play_card c p c_top)
-4: (play_card c p c_top)
-5: (play_card c p c_top)
+0: (draw_card c4 c2)
+1: (draw_card c2 c3)
+2: (draw_final_card c3)
+3: (play_card c4 pile1 c_max)
+4: (play_card c2 pile0 c_min)
+5: (play_card c3 pile1 c4)
 
 ; Makespan: 5
 ; Metric: 5

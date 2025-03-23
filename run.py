@@ -15,7 +15,7 @@ def save_plan_to_file(plan_actions: list, domain_name: str, problem_name: str):
 
         for i, action in enumerate(plan_actions):
             f.write(
-                f"{i}: ({' '.join([action.action.name] + [param.name for param in action.action.parameters])})\n"
+                f"{i}: ({' '.join([action.action.name] + [str(param) for param in action.actual_parameters])})\n"
             )
 
         makespan = len(plan_actions) - 1
