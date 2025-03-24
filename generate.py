@@ -75,3 +75,4 @@ def generate(
 generate("hard", list(range(2, 30)), 2, 2, c_min=1, c_max=30)
 generate("medium", list(range(2, 20)), 1, 1, c_min=1, c_max=20)
 generate("easy", list(range(2, 5)), 1, 0, c_min=1, c_max=None)
+generate("very_hard", list(range(2, 50)), 2, 2, c_min=1, c_max=50)

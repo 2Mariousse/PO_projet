@@ -1,10 +1,12 @@
 from unified_planning.io import PDDLReader
 from up_enhsp.enhsp_planner import ENHSPEngine
 
+import sys
+
 
 domain_file = "domain.pddl"
 
-planner = ENHSPEngine()
+planner = ENHSPEngine("-h blcost")
 pddl_reader = PDDLReader()
 
 
@@ -23,9 +25,9 @@ def save_plan_to_file(plan_actions: list, domain_name: str, problem_name: str):
         f.write(f"; Metric: {makespan}\n")
 
 
-for problem_name in ["easy", "medium", "hard"]:
+for problem_name in ["easy", "medium", "hard", "very_hard"]:
     problem = pddl_reader.parse_problem(domain_file, f"{problem_name}.pddl")
-    result = planner.solve(problem)
+    result = planner.solve(problem, output_stream=sys.stdout)
 
     if result.plan is None:
         print(f"No plan found for {problem.name}")

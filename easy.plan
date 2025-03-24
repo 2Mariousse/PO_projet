@@ -1,9 +1,9 @@
 ;;!domain: the_game
 ;;!problem: easy
 
-0: (draw_card c4 c2)
-1: (draw_card c2 c3)
-2: (draw_final_card c3)
+0: (draw_card c3 c2)
+1: (draw_card c2 c4)
+2: (draw_final_card c4)
 3: (play_card c2 pile0 c_min)
 4: (play_card c3 pile0 c2)
 5: (play_card c4 pile0 c3)
