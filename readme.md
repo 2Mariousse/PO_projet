@@ -67,9 +67,11 @@ Lors de notre recherche, nous avons observé que de nombreux problèmes se ramen
   - `pile0` est une pile ascendante.
   - `c_min` est la carte initiale sur `pile0`.
   - `c4`, `c2`, `c3` sont dans la pioche dans cet ordre.
+  - `c4` est la première carte de la pioche
+  - `c3` est la dernière carte de la pioche
   - La main du joueur est vide au début.
 - **Objectif :**
-  - Toutes les cartes ont été jouées (`deck_empty`).
+  - Toutes les cartes ont été piochées (`deck_empty`).
   - La main du joueur est vide (`n_card_in_hand = 0`).
 
 ## Contraintes et limitations
