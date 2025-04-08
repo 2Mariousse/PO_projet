@@ -1,5 +1,7 @@
 from unified_planning.io import PDDLReader
 from up_enhsp.enhsp_planner import ENHSPEngine
+from unified_planning.plans import SequentialPlan
+from unified_planning.plans.plan import ActionInstance
 
 import sys
 
@@ -10,7 +12,9 @@ planner = ENHSPEngine("-h blcost")
 pddl_reader = PDDLReader()
 
 
-def save_plan_to_file(plan_actions: list, domain_name: str, problem_name: str):
+def save_plan_to_file(
+    plan_actions: list[ActionInstance], domain_name: str, problem_name: str | None
+):
     with open(f"{problem_name}.plan", "w") as f:
         f.write(f";;!domain: {domain_name}\n")
         f.write(f";;!problem: {problem_name}\n\n")
@@ -32,5 +36,7 @@ for problem_name in ["easy", "medium", "hard", "very_hard"]:
     if result.plan is None:
         print(f"No plan found for {problem.name}")
     else:
+        assert isinstance(result.plan, SequentialPlan)
+
         print(f"Plan found for {problem.name}")
         save_plan_to_file(result.plan.actions, "the_game", problem.name)
