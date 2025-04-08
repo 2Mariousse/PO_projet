@@ -1,0 +1,18 @@
+Domain,Problem,Plan-Length,Metric,Planning Time (s),Heuristic Time (s),Search Time (s),Expanded Nodes,States Evaluated,Dead-Ends,Duplicates
+the_game,easy,6,6.0,0.011,0.004,0.009,10,11,0,0
+the_game,medium,40,40.0,0.037,0.005,0.033,71,180,0,2
+the_game,hard,66,66.0,0.072,0.008,0.067,123,544,0,2
+the_game,very_hard,114,114.0,0.65,0.008,0.645,2878,3295,0,1093
+hamiltonian-cycle,small,6,6.0,0.021,0.012,0.018,15,22,0,0
+hamiltonian-cycle,large,31,31.0,3.323,0.018,3.318,7087,7382,0,6265
+hamiltonian-cycle,medium,13,13.0,0.03,0.011,0.027,52,99,0,4
+pursuit-evasion,small-0,9,9.0,0.024,0.009,0.021,28,93,0,27
+pursuit-evasion,small-1,4,4.0,0.018,0.008,0.015,7,28,0,5
+pursuit-evasion,small-2,5,5.0,0.02,0.01,0.017,10,26,0,11
+pursuit-evasion,small-3,12,12.0,0.037,0.011,0.031,97,143,0,54
+pursuit-evasion,medium-4,42,42.0,0.044,0.01,0.039,200,519,0,172
+pursuit-evasion,medium-5,10,10.0,0.078,0.012,0.072,1742,1781,0,2594
+pursuit-evasion,medium-6,32,32.0,0.075,0.013,0.072,1180,1591,0,1001
+pursuit-evasion,large-7,288,288.0,0.734,0.011,0.731,48026,51194,0,109205
+pursuit-evasion,large-8,163,163.0,65.112,0.05,65.108,1374248,1377678,0,7339432
+pursuit-evasion,large-10,68,68.0,30.28,0.076,30.277,1735657,1738442,0,7309552
